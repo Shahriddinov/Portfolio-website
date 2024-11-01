@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 const states = [
     {
-        num: 12,
+        num: 3,
         text:"Years of experience"
     },
     {

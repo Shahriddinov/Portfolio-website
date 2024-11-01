@@ -6,9 +6,12 @@ import {
     FaJs,
     FaReact,
     FaFigma,
-    FaNodeJs, FaGraduationCap
+    FaGraduationCap,
+    FaBootstrap,
+    FaGithub,
+    FaSass,
 } from "react-icons/fa";
-import {SiTailwindcss, SiNextdotjs, SiRedux} from "react-icons/si";
+import {SiTailwindcss, SiNextdotjs, SiRedux, SiTypescript} from "react-icons/si";
 import {CiBadgeDollar} from "react-icons/ci";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
@@ -17,7 +20,7 @@ import {motion} from "framer-motion";
 
 const about = {
     title: 'About me',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptatum?',
+    description: 'I\'m a dedicated web developer with a passion for building seamless digital experiences. With a strong foundation in frontend technologies and a keen eye for design, I aim to create impactful, user-friendly interfaces that bring ideas to life.',
     info: [
         {
             fieldName: "Name",
@@ -64,7 +67,7 @@ const about = {
 const experience = {
     icon: <CiBadgeDollar/>,
     title: 'My experience',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptatum?',
+    description: 'With a solid background in web development, I specialize in creating responsive and interactive digital solutions, managing projects effectively, and delivering high-quality results tailored to client needs.',
     items: [
         {
             company: 'Ministry of Innovation.',
@@ -101,7 +104,11 @@ const experience = {
 const education = {
     icon: <FaGraduationCap/>,
     title: 'My education',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptatum?',
+    description: 'I hold a Bachelor\'s degree in Computer Science, where I focused on frontend development.\n' +
+        'I gained practical experience through various projects and coding boot camps.\n' +
+        'My studies equipped me with a strong foundation in programming languages and web technologies.\n' +
+        'I am committed to continuous learning in the rapidly evolving tech landscape.\n' +
+        '\n',
     items: [
         {
             institution: 'University of Science and Technologies',
@@ -123,7 +130,12 @@ const education = {
 };
 const skills = {
     title: 'My Skills',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptatum?',
+    description: 'I excel in HTML, CSS, and JavaScript for frontend development.\n' +
+        'My expertise lies in using React and Redux to build dynamic applications.\n' +
+        'I leverage TypeScript to ensure code quality and maintainability.\n' +
+        'I design responsive layouts that enhance user experiences across devices.\n' +
+        'I implement SEO best practices to improve site visibility and rankings.\n' +
+        'I utilize Git for effective version control and team collaboration.',
     skillList: [
         {
             icon: <FaHtml5/>,
@@ -132,6 +144,13 @@ const skills = {
         {
             icon: <FaCss3/>,
             name: 'css 3',
+        }, {
+            icon: <FaSass/>,
+            name: 'sass',
+        },
+        {
+            icon: <FaBootstrap/>,
+            name: 'bootstrap',
         },
         {
             icon: <FaJs/>,
@@ -154,8 +173,16 @@ const skills = {
             name: 'redux',
         },
         {
+            icon: <SiTypescript/>,
+            name: 'typescript',
+        },
+        {
             icon: <FaFigma/>,
             name: 'figma',
+        },
+        {
+            icon: <FaGithub/>,
+            name: 'github',
         },
     ]
 };

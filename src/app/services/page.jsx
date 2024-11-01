@@ -8,25 +8,25 @@ const services = [
     {
         num: '01',
         title: 'Web Developer',
-        description: 'Lorem ipsum dolor sit amet. Consequuntur eaque eveniet hic id .',
+        description: 'Creating responsive, high-speed websites tailored to your business needs, optimized for user experience, SEO, and cross-device compatibility.',
         href: ""
     },
     {
         num: '02',
-        title: 'UI/UX Design',
-        description: 'Lorem ipsum dolor sit amet. Consequuntur eaque eveniet hic id .',
+        title: 'Project Manager',
+        description: 'Leading projects from concept to completion, coordinating teams, managing timelines, and ensuring goals are met with quality and efficiency for optimal project success.',
         href: ""
     },
     {
         num: '03',
         title: 'Teacher',
-        description: 'Lorem ipsum dolor sit amet. Consequuntur eaque eveniet hic id .',
+        description: 'Delivering hands-on learning in frontend technologies, guiding students through HTML, CSS, JavaScript, and modern frameworks to build responsive, interactive web applications.',
         href: "",
     },
     {
         num: '04',
         title: 'Freelancer',
-        description: 'Lorem ipsum dolor sit amet. Consequuntur eaque eveniet hic id .',
+        description: 'Providing custom, high-quality frontend solutions, from responsive design to interactive features, ensuring seamless user experiences and efficient project delivery.',
         href: ""
     },
 ]

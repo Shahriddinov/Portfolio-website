@@ -19,22 +19,23 @@ const projects = [
         num: '01',
         category: 'frontend',
         title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, possimus?',
+        description: 'Mga Rekmala. This is a Turkish banner maker and delivery company. The company\'s services and partners, successfully completed projects are posted on this site.',
         stack: [
             {name: 'Html 5'},
-            {name: 'Css 3'},
             {name: 'Sass 3'},
             {name: 'Javascript'},
-            {name: 'React.js'},],
+            {name: 'React.js'},
+            {name: 'Redux'},
+        ],
         image: '/assets/work/mga.jpg',
-        live: '',
-        github: ''
+        live: 'http://www.mgareklama.com/',
+        github: 'https://github.com/Shahriddinov/Mga-Reklama'
     },
     {
         num: '02',
         category: 'frontend',
         title: 'project 2',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, possimus?',
+        description: 'Vatandoshlar fondi. This project is a site created for our compatriots abroad, and on this site you can see the events of our country through videos, stay informed about the news, participate in webinars, learn the Uzbek language, and communicate via chat. is available and easy to use.',
         stack: [
 
             {name: 'Javascript'},
@@ -44,14 +45,14 @@ const projects = [
             {name: 'Websocket'},
         ],
         image: '/assets/work/vatandosh.jpg',
-        live: '',
-        github: ''
+        live: 'https://vatandoshlarfondi.uz/',
+        github: 'https://github.com/Shahriddinov/Vatandosh'
     },
     {
         num: '03',
         category: 'frontend',
         title: 'project 3',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, possimus?',
+        description: 'Clear path. This project provides information about the state of the country\'s motor vehicle roads, i.e., roads that are damaged or closed for a specific reason and are undergoing repair work.',
         stack: [
             {name: 'Javascript'},
             {name: 'React.js'},
@@ -60,7 +61,23 @@ const projects = [
             {name: 'Next.js'},
         ],
         image: '/assets/work/shaffof.jpg',
-        live: '',
+        live: 'https://shaffofyul.uz/uz',
+        github: ''
+    },
+    {
+        num: '04',
+        category: 'frontend',
+        title: 'project 4',
+        description: 'This platform is about physical education and sports in the country. It is designed for teachers to register and take tests in order to receive a certificate for teaching.',
+        stack: [
+            {name: 'Javascript'},
+            {name: 'React.js'},
+            {name: 'Redux'},
+            {name: 'Toolkit'},
+            {name: 'Next.js'},
+        ],
+        image: '/assets/work/sport.jpg',
+        live: 'https://sportedu.uz/',
         github: ''
     },
 ];
@@ -85,7 +102,7 @@ const Work = () => {
                         <div className="flex flex-col gap-[30px] h-[50%]">
                             <div
                                 className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
-                            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} project</h2>
+                            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} </h2>
                             <p className="text-white/60">{project.description}</p>
                             <ul className="flex gap-4">
                                 {project.stack.map((item, index) => {
@@ -97,7 +114,7 @@ const Work = () => {
                             </ul>
                             <div className="border border-white/20"></div>
                             <div className="flex items-center gap-4">
-                                <Link href={project.live}>
+                                <Link href={project.live} target="_blank">
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger
@@ -111,7 +128,7 @@ const Work = () => {
                                         </Tooltip>
                                     </TooltipProvider>
                                 </Link>
-                                <Link href={project.github}>
+                                <Link href={project.github} target="_blank">
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger
