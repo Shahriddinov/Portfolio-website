@@ -38,7 +38,6 @@ const Contact = () => {
     const [success,setSuccess] = useState(false);
     const [error,setError] = useState(false);
     const form = useRef();
-    const [userService, setUserService] = useState(""); // `user_service` state
 
 
     const sendEmail = (e) => {
@@ -57,11 +56,8 @@ const Contact = () => {
                 () => {
                     setSuccess(true)
                     form.current.reset();
-                    setUserService("");
                 },
-                (error) => {
-                    setError(true)
-                },
+
             );
     };
     return (
