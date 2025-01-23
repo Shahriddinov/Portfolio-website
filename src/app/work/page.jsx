@@ -80,6 +80,38 @@ const projects = [
         live: 'https://sportedu.uz/',
         github: ''
     },
+    {
+        num: '05',
+        category: 'frontend (Next.js)',
+        title: 'project 5',
+        description: 'Mirabad District - this project is a website that reflects news related to the district and current events in the republic.',
+        stack: [
+            {name: 'Javascript'},
+            {name: 'React.js'},
+            {name: 'Redux'},
+            {name: 'Toolkit'},
+            {name: 'Next.js'},
+        ],
+        image: '/assets/work/mirobod.png',
+        live: 'https://mirobodtumani.uz/',
+        github: ''
+    },
+    {
+        num: '06',
+        category: 'frontend',
+        title: 'project 6',
+        description: 'Islam Karimov Technical Institute - contains general information about the institute, news about the administration, and online classes.',
+        stack: [
+            {name: 'Javascript'},
+            {name: 'React.js'},
+            {name: 'Redux'},
+            {name: 'Toolkit'},
+            {name: 'Next.js'},
+        ],
+        image: '/assets/work/texnika.png',
+        live: 'https://tdtu.uz/',
+        github: ''
+    },
 ];
 
 const Work = () => {
