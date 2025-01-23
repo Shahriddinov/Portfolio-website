@@ -3,7 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
-
+import { GoogleAnalytics } from "nextjs-google-analytics";
+import Script from "next/script";
 const jetbrainsMono = JetBrains_Mono({
     subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
     variable: '--font-jetbrainsMono'
@@ -19,6 +20,21 @@ export default function RootLayout({children}) {
         <body
             className={`${jetbrainsMono.variable} ${jetbrainsMono.variable} antialiased`}
         >
+        <Script
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+        />
+        <Script
+            id="google-analytics"
+            strategy="afterInteractive"
+        >
+            {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+            `}
+        </Script>
         <Header/>
         <StairTransition/>
         <PageTransition>{children}</PageTransition>
